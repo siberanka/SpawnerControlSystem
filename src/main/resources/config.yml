@@ -1,0 +1,53 @@
+# ==================================================== #
+#              Spawner Control System                  #
+#               Author: siberanka                      #
+# ==================================================== #
+
+# Language file to use. Currently available: en, tr
+lang: "tr"
+
+# Database & RAM Cache Settings
+database:
+  file-name: "spawners.db"
+
+# Configure condition checks when a player tries to PLACE a spawner.
+place-conditions:
+  enabled: true
+  
+  # List of worlds where the place conditions will be checked.
+  # Use ["*"] to specify all worlds.
+  enabled-worlds:
+    - "*"
+  
+  # List of condition groups. If ANY group passes (all conditions in a group are true),
+  # the spawner can be placed.
+  condition-groups:
+    group1:
+      - "%lands_land_owner_here% != none"
+    # group2:
+    #   - "%player_has_permission_scc.vip% = yes"
+
+# Logging configuration for Spawner events
+logging:
+  local-file:
+    enabled: true
+    # Logs will be saved to plugins/SpawnerControlSystem/spawners.log
+  discord-webhook:
+    enabled: false
+    # The webhook URL to send embeds to
+    url: "https://discord.com/api/webhooks/your-webhook-id/your-webhook-token"
+    # Provide integer color code (e.g. 5814783 for purple, 65280 for green, 16711680 for red)
+    color-place: 65280 # Green
+    color-break: 16711680 # Red
+
+# Configure condition checks when a player tries to BREAK a spawner.
+break-conditions:
+  enabled: true
+  
+  # List of worlds where the break conditions will be checked.
+  # Use ["*"] to specify all worlds.
+  enabled-worlds:
+    - "*"
+  
+  conditions:
+    - "%lands_land_owner_here% != none"

@@ -1,0 +1,14 @@
+prefix: "&8[&eSCC&8] &7» "
+no-permission: "&cYou do not have permission to do this."
+reload-success: "&aPlugin successfully reloaded!"
+cannot-place: "&cYou cannot place a spawner here! Conditions not met."
+cannot-break: "&cYou cannot break this spawner! Conditions not met."
+admin-bypass-break: "&aBypassed condition check for breaking a natural spawner."
+
+webhook:
+  name: "Spawner Control Logs"
+  place-title: "Spawner Placed"
+  break-title: "Spawner Broken"
+  description: "**Player:** {player}\\n**Location:** {world}, {x}, {y}, {z}\\n**Event:** Spawner {action} successfully."
+  
+log-txt: "[{time}] Player {player} {action} a spawner at {world}, {x}, {y}, {z}."

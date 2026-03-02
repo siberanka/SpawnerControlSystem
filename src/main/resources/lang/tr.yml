@@ -1,0 +1,14 @@
+prefix: "&8[&eSCC&8] &7» "
+no-permission: "&cBu işlemi yapmak için yetkiniz yok."
+reload-success: "&aEklenti başarıyla yeniden yüklendi!"
+cannot-place: "&cBuraya spawner yerleştiremezsiniz! Şartlar sağlanmıyor."
+cannot-break: "&cBu spawnerı kıramazsınız! Şartlar sağlanmıyor."
+admin-bypass-break: "&aDoğal spawner kırma şartları başarıyla es geçildi."
+
+webhook:
+  name: "Spawner Loglama"
+  place-title: "Spawner Yerleştirildi"
+  break-title: "Spawner Kırıldı"
+  description: "**Oyuncu:** {player}\\n**Konum:** {world}, {x}, {y}, {z}\\n**Olay:** Spawner başarıyla {action}."
+  
+log-txt: "[{time}] {player} (Oyuncu), {world}, {x}, {y}, {z} konumundaki spawnerı {action}."

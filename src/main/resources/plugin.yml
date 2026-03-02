@@ -1,0 +1,20 @@
+name: SpawnerControlSystem
+version: '${project.version}'
+main: com.siberanka.spawnercontrolsystem.SpawnerControlSystem
+api-version: '1.21'
+folia-supported: true
+authors: [siberanka]
+description: A highly customizable Folia-supported plugin for controlling spawner place and break events with PlaceholderAPI conditions.
+
+depend: [PlaceholderAPI]
+
+commands:
+  scc:
+    description: Spawner Control System main command.
+    aliases: [spawnercontrol]
+    permission: scc.admin
+
+permissions:
+  scc.admin:
+    description: Allows bypassing spawner conditions and reloading the plugin.
+    default: op
