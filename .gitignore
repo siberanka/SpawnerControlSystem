@@ -63,3 +63,6 @@ crash-reports/
 
 # Dependencies
 dependency-reduced-pom.xml
+
+# Text files
+*.txt
